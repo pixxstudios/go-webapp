@@ -11,7 +11,7 @@ func Home(w http.ResponseWriter, r *http.Request) {
 }
 
 func About(w http.ResponseWriter, r *http.Request) {
-
+	renderTemplate(w, "about.go.tpl")
 }
 
 func renderTemplate(w http.ResponseWriter, tmpl string) {
